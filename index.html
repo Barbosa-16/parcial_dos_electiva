@@ -9,10 +9,14 @@
 </head>
 <body>
   <div class="form-container">
-    <div class="logo">
-      <img src="./assets/star-wars-2.svg" alt="Logo de la Academia Jedi" />
+    <div class="header-container">
+      <img src="./assets/star-wars-2.svg" alt="Logo de la Academia Jedi" class="logo" />
+      <div class="title-group">
+        <h1>Academia Jedi</h1>
+        <p class="subtitulo">Que la fuerza te acompañe!</p>
+      </div>
     </div>
-    <h1>Ingreso a la Academia Jedi</h1>
+
     <form>
       <label for="nombre">Nombre del Aprendiz</label>
       <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre aquí" required>
@@ -46,11 +50,11 @@
       <fieldset>
         <legend>Selección de Sables de Luz Preferidos</legend>
         <div class="checkbox-group">
-          <label><input type="checkbox" name="sable" value="azul"> Azul</label>
-          <label><input type="checkbox" name="sable" value="verde"> Verde</label>
-          <label><input type="checkbox" name="sable" value="morado"> Morado</label>
-          <label><input type="checkbox" name="sable" value="rojo"> Rojo</label>
-          <label><input type="checkbox" name="sable" value="doble"> Doble hoja</label>
+         <label><input type="checkbox" name="sable" value="azul"> Azul</label>
+        <label><input type="checkbox" name="sable" value="verde"> Verde</label>
+        <label><input type="checkbox" name="sable" value="morado"> Morado</label>
+        <label><input type="checkbox" name="sable" value="rojo"> Rojo</label>
+        <label><input type="checkbox" name="sable" value="doble"> Doble Hoja</label>
         </div>
       </fieldset>
 
@@ -59,8 +63,9 @@
 
       <button type="submit" class="submit-button">Enviar solicitud al Consejo Jedi</button>
     </form>
+
     <footer>
-      El camino del aprendiz empieza con un clic…
+      <p class="nota">Nota<br><span>Bienvenido a tu nuevo camino</span></p>
     </footer>
   </div>
 </body>
